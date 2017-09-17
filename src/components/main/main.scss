@@ -30,6 +30,7 @@
   &__logo {
     transform: scale(0.95);
     font-size: 3em;
+    font-weight: 100;
   }
 
   &__message {
@@ -59,7 +60,7 @@
 
 .scale {
   transform: scale(1);
-  transition: all 2.5s;
+  transition: all 4s;
 }
 
 @media screen and (max-width: 760px) {
