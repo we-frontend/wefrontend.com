@@ -28,6 +28,7 @@
   }
 
   &__logo {
+    transform: scale(0.95);
     font-size: 3em;
   }
 
@@ -54,6 +55,11 @@
     transition: opacity 2.5s;
     opacity: 1;
   }
+}
+
+.scale {
+  transform: scale(1);
+  transition: all 2.5s;
 }
 
 @media screen and (max-width: 760px) {

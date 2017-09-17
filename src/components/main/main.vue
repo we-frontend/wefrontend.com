@@ -4,7 +4,7 @@
       <div class="init-view__container vertical">
         <transition name="fade">
           <div class="init-view__content" v-if="show">
-            <p class="init-view__logo">WE FRONTEND</p>
+            <p class="init-view__logo" :class="{scale : scale}">WE FRONTEND</p>
             <p class="init-view__message">
               Coming Soon...
             </p>
@@ -23,12 +23,16 @@
       name: 'main',
       data() {
           return {
-              show: false
+              show: false,
+              scale : false
           }
       },
       methods: {
           initShow() {
               this.show = !this.show;
+              setTimeout(()=> {
+                  this.scale = !this.scale;
+              }, 100);
           }
       },
       mounted() {
