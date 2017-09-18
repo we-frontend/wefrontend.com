@@ -6,7 +6,7 @@
           <div class="init-view__content" v-if="show">
             <p class="init-view__logo" :class="{scale : scale}">WE FRONTEND</p>
             <p class="init-view__message">
-              Coming Soon...
+              <span class="init-view__schedule">[ Box-model & Grid-System ]</span>
             </p>
             <p class="init-view__github">
               <a href="https://github.com/we-frontend"><i class="fa fa-github-square icon" aria-hidden="true"></i></a>
